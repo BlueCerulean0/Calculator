@@ -4,72 +4,66 @@ body {
     background-color: hwb(185 1% 69%);
     justify-content: center;
     align-items: center;
+    height: 100vh; /* Makes the body take the full viewport height */
+    margin: 0; /* Removes any default margin */
 }
 
 .characters {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    max-width: 210px;
-    padding: 10px;
-    border: 10px;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+    max-width: 230px; /* Adjusted width for better fit */
+    padding: 20px; /* Added padding for spacing */
     background-color: #22252d;
-    gap: 20px;
-    border-radius: 7px;
+    gap: 10px; /* Adjusted gap for better spacing */
+    border-radius: 10px; /* Adjusted for a smoother rounded effect */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a more elevated look */
 }
+
 #equal {
-    width: 92px;
+    width: 92px; /* Double width for the equal button */
 }
 
 #display {
     display: flex;
     background-color: #272b33;
     color: white;
-    width: auto;
-    justify-content: center;
-    align-items: center; 
-    height: auto; 
-    padding: 16px;
-    margin: 4px;
+    width: 100%; /* Ensures display spans the full width of .characters */
+    height: 40px; /* Fixed height for consistency */
+    padding: 10px;
+    margin-bottom: 10px; /* Space between display and buttons */
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-align: right; /* Aligns text to the right */
+    font-size: 1.2em;
 }
 
 input {
-    border: 2px;
-    border-radius: 8px;
-    padding: 0px;
-    margin: 1px;
-    border: 1px;
+    border: none;
+    outline: none;
+    background: transparent; /* Blends with the display's background */
+    color: white;
+    width: 100%;
+    text-align: right;
 }
-
-
 
 button {
     background-color: #272b33;
-    border: 2px;
-    border-radius: 8px;
+    border: none;
+    border-radius: 5px;
     color: white;
     cursor: pointer;
-    font-family: arial,sans-serif;
+    font-family: arial, sans-serif;
     font-size: 16px;
-    width: 36px;
-    height: 36px;
-    padding: 0 16px;
-    text-align: center;
-    font-weight: 400;
-    text-align: center;
-    align-self: center;
+    width: 50px; /* Consistent button width */
+    height: 50px; /* Consistent button height */
     display: flex; 
     justify-content: center; 
     align-items: center;
     font-weight: 600;
-  }
+}
 
 button:hover {
-border-width: 2px;
-box-shadow: rgba(255, 255, 255, 0.13) 0 2px 2px;
-color: #05e08c;
-
+    box-shadow: rgba(255, 255, 255, 0.13) 0 2px 2px;
+    color: #05e08c;
 }
