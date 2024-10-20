@@ -4,44 +4,44 @@ body {
     background-color: hwb(185 1% 69%);
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Makes the body take the full viewport height */
-    margin: 0; /* Removes any default margin */
+    height: 100vh; 
+    margin: 0;
 }
 
 .characters {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    max-width: 230px; /* Adjusted width for better fit */
-    padding: 20px; /* Added padding for spacing */
+    max-width: 230px; 
+    padding: 20px; 
     background-color: #22252d;
-    gap: 10px; /* Adjusted gap for better spacing */
-    border-radius: 10px; /* Adjusted for a smoother rounded effect */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a more elevated look */
+    gap: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
 }
 
 #equal {
-    width: 92px; /* Double width for the equal button */
+    width: 110px; 
 }
 
 #display {
     display: flex;
     background-color: #272b33;
     color: white;
-    width: 100%; /* Ensures display spans the full width of .characters */
-    height: 40px; /* Fixed height for consistency */
+    width: 100%; 
+    height: 40px;
     padding: 10px;
-    margin-bottom: 10px; /* Space between display and buttons */
+    margin-bottom: 10px;
     border-radius: 5px;
     box-sizing: border-box;
-    text-align: right; /* Aligns text to the right */
+    text-align: right;
     font-size: 1.2em;
 }
 
 input {
     border: none;
     outline: none;
-    background: transparent; /* Blends with the display's background */
+    background: transparent; 
     color: white;
     width: 100%;
     text-align: right;
@@ -55,8 +55,8 @@ button {
     cursor: pointer;
     font-family: arial, sans-serif;
     font-size: 16px;
-    width: 50px; /* Consistent button width */
-    height: 50px; /* Consistent button height */
+    width: 50px; 
+    height: 50px; 
     display: flex; 
     justify-content: center; 
     align-items: center;
