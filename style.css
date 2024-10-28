@@ -1,53 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 body {
     display: flex;
     flex-direction: column;
     background-color: hwb(185 1% 69%);
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Makes the body take the full viewport height */
-    margin: 0; /* Removes any default margin */
+    height: 100vh; 
+    margin: 0;
 }
 
-.characters {
+.container {
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
-    max-width: 230px; /* Adjusted width for better fit */
-    padding: 20px; /* Added padding for spacing */
+    width: 230px;
+    padding: 20px; 
     background-color: #22252d;
-    gap: 10px; /* Adjusted gap for better spacing */
-    border-radius: 10px; /* Adjusted for a smoother rounded effect */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow for a more elevated look */
+    gap: 10px; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 1); 
 }
 
 #equal {
-    width: 92px; /* Double width for the equal button */
+    width: 110px; 
 }
 
 #display {
     display: flex;
     background-color: #272b33;
     color: white;
-    width: 100%; /* Ensures display spans the full width of .characters */
-    height: 40px; /* Fixed height for consistency */
+    width: 100%; 
+    height: auto;
+    min-height: 40px;
     padding: 10px;
-    margin-bottom: 10px; /* Space between display and buttons */
+    margin-bottom: 10px;
     border-radius: 5px;
     box-sizing: border-box;
-    text-align: right; /* Aligns text to the right */
-    font-size: 1.2em;
+    text-align: right;
+    font-size: 1.5em;
+    resize: none;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    line-height: 1.2em;
+    font-family: "Inter", serif;
 }
 
 input {
     border: none;
     outline: none;
-    background: transparent; /* Blends with the display's background */
+    background: transparent; 
     color: white;
     width: 100%;
     text-align: right;
 }
 
-button {
+button, button:active {
     background-color: #272b33;
     border: none;
     border-radius: 5px;
@@ -55,8 +63,8 @@ button {
     cursor: pointer;
     font-family: arial, sans-serif;
     font-size: 16px;
-    width: 50px; /* Consistent button width */
-    height: 50px; /* Consistent button height */
+    width: 50px; 
+    height: 50px; 
     display: flex; 
     justify-content: center; 
     align-items: center;
@@ -64,6 +72,12 @@ button {
 }
 
 button:hover {
-    box-shadow: rgba(255, 255, 255, 0.13) 0 2px 2px;
+    box-shadow: rgba(255, 255, 255, 0.13) 0 1px 6px;
     color: #05e08c;
+}
+
+button:active {
+    color: rgb(0, 127, 230);
+    cursor: pointer;
+    box-shadow: none;
 }

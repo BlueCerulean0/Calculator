@@ -11,29 +11,31 @@
     
     
     
-    <div id="characters" class="characters">
-        <input id="display" readonly>
-        <button id="clearDisplay" onclick="clearDisplay()">C</button>
-        <button id="back" onclick="back()">⌫</button>
+    <div id="container" class="container">
+        <textarea id="display" readonly></textarea>
+        <button id="clearDisplay">C</button>
+        <button id="back">⌫</button>
 
-        <button id="%" onclick="appendToDisplay('%')">%</button>
-        <button id="/" onclick="appendToDisplay('/')">÷</button>
-        <button id="7" onclick="appendToDisplay('7')">7</button>
-        <button id="8" onclick="appendToDisplay('8')">8</button>
-        <button id="9" onclick="appendToDisplay('9')">9</button>
-        <button id="*" onclick="appendToDisplay('*')">×</button>
-        <button id="4" onclick="appendToDisplay('4')">4</button>
-        <button id="5" onclick="appendToDisplay('5')">5</button>
-        <button id="6" onclick="appendToDisplay('6')">6</button>
-        <button id="-" onclick="appendToDisplay('-')">-</button>
-        <button id="1" onclick="appendToDisplay('1')">1</button>
-        <button id="2" onclick="appendToDisplay('2')">2</button>
-        <button id="3" onclick="appendToDisplay('3')">3</button>
-        <button id="+" onclick="appendToDisplay('+')">+</button>
-        <button id="0" onclick="appendToDisplay('0')">0</button>
-        <button id="." onclick="appendToDisplay('.')">.</button>
+        <button id="%" class="operator">%</button>
+        <button id="/" class="operator">÷</button>
+        <button id="7" class="numBtn">7</button>
+        <button id="8" class="numBtn">8</button>
+        <button id="9" class="numBtn">9</button>
+        <button id="*" class="operator">×</button>
+        <button id="4" class="numBtn">4</button>
+        <button id="5" class="numBtn">5</button>
+        <button id="6" class="numBtn">6</button>
+        <button id="-" class="operator">-</button>
+        <button id="1" class="numBtn">1</button>
+        <button id="2" class="numBtn">2</button>
+        <button id="3" class="numBtn">3</button>
+        <button id="+" class="operator">+</button>
+        <button id="0" class="numBtn">0</button>
+        <button id="period" >.</button>
 
-        <button id="equal" onclick="calculate()">=</button>
+        <audio id="myAudio" src="audio/twentyOne.mp3" preload="auto"></audio>
+        <audio id="myAudio2" src="audio/what9plus10.mp3" preload="auto"></audio>
+        <button id="equal">=</button>
 
     </div>
 
